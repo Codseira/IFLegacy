@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+ /*Fundo do site e centralizações*/
+body{
+    background-color: #c9ffd5;
+    background: linear-gradient(to right, #d1f5d9, #58c2a4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+ /*Box forms*/
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    
+
+}
+.container h1{
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
+ /*Mensagem*/
+.container p{
+    font-size: 12px;
+    text-align: center;   
+    margin: 10px 0;
+}
+.container span{
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+ /*Botão de Enviar*/
+.container button{
+    background-color: #2B9F3F;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.text{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 50px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 90%;
+    outline: none;
+}
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 90%;
+    outline: none;
+    display: block;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.send{
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.container.active .send{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+
